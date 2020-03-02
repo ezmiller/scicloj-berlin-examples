@@ -62,7 +62,7 @@
      (dfn/+ 1)
      (dfn/mean))
 
-;; And we can use Numpy functions!
+;; And we can use Numpy functions! -- and nothing has been copied
 (->> (dtype/make-container :typed-buffer :float32 (range 5))
      dtype/->reader
      (np/mean))
